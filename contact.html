@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="contact.css">
+
+
+</head>
+<body>
+    <script 
+    src="script.js">
+    </script>
+
+
+    <!--- HEADER-->
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="mac.html">Mac n' Cheese</a></li>
+        <li><a href="about.html">About Us</a></li>  </li>
+
+        <!---Comprar-->
+              <div class="dropdn"> 
+              <span>
+            <button onclick="myFunction()" class="dropbtn"> 
+              </span>
+              </button> 
+              <div class="drop-content"> 
+               </div>
+               <div 
+            id="myDropdown" class="dropdn-content"> 
+                <ol><a href="#list">Your shopping  <br>list</a></ol>
+                <ol><a href="#now">Shop now</a></ol>
+               </div> 
+               </div>
+
+        <!---Settings-->
+        <div class="dropdn2">  
+          <span>
+              <button onclick="diana()" class="dropbtn2" > 
+          </span> </button> 
+          <div 
+          class="drop-content" style="overflow: hidden;"> 
+          </div>
+          <div id="tt" class="dropdn2-content"> 
+
+              <a href="contact.html"> <button class="dropbtn5" style="margin-bottom: 5px;"> Contact Us </button></a>
+
+               <div class="dropdown">
+              <button class="dropbtn4" style="overflow: visible;">Language</button>
+              <div class="dropdown-content" style="overflow: visible;"> 
+                  
+                <a href="contact.html" class="english" style="color: white; " > English </a>
+                <a href= "contact2.html" class="spanish" style="color: white; "> Spanish </a>
+</div>
+</div>
+
+
+
+          </div>  </div>
+
+
+        <!---Usuario-->
+                 <div class="dropdn3">
+                       <span>
+                <button onclick="chichi()" class="dropbtn3"> 
+                 </button> </span>
+                 <div class="drop-content"> 
+                      </div>
+                 <div id="ff" class="dropdn3-content"> 
+                  <ol><a href="login.html">Log In</a></ol>
+                  <ol><a href="signup.html">Sign Up</a></ol>
+                 </div>  </div>
+           
+    </ul> 
+       
+<!---Logo-->
+    <div
+    class="logo">
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p> Reserve a table, ask us for today's special, or leave us a message:</p>
+  </div>
+  <br>
+  <div class="row">
+    <div class="column">
+      <img src="imagenes/Untitled design-5.png" style="width:520px; margin-left: 40px; margin-right: -20px; margin-bottom: -30px;">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="lname">How many people</label>
+        <input class="w3-input" id="amount" type="number" placeholder="The quantity of people.." style="width: 550px; padding:12px 0px; padding-left:10px; margin-left:40px" name="People">
+  
+
+        <label for="lname">Date and time</label>
+        <input class="w3-input" id="date" type="datetime-local" placeholder="Date and time" name="date" value="2020-11-16T20:00" style="margin-left:40px">
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Message/Special Requirements" style="height:170px"></textarea>
+        <input type="submit" value="Submit" style="margin-left:280px" onclick="myFunction2()"></form>
+      <div id="snackbar">Message submitted</div>
+      
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function myFunction2() {
+    var y = document.getElementById("subject");
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    if (y != "") {setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }}
+  </script>
+  
+
+  
+  <section
+  class="banner33" style="margin-top: 40px ;">
+  <p class="la"> Delivery & Carry Out</p>
+  <p class="lo"> 809.706.5762</p>
+  <p class="lu" style="margin-top: -20px;" > @ 2021 ALL RIGHTS RESERVED. NAREX SA</p>
+  <table style="margin-top: 15px; margin-left: 917px; padding-bottom: 4px;">
+      <tr><center>
+          <td> <p class="la" style="margin-left: 160px; margin-top: -80px; font-size: 11px; font-weight: light;"> Follow Us On Social Media
+          </p> </center>
+        <br>
+        <a href=" https://www.facebook.com/profile.php?id=100081460869145" target="_blank">
+          <img src="imagenes/facebook.png" width="24" style="margin-left: 100px; margin-top: -10px;"></a>
+        
+        <br>
+        <a href=" https://www.instagram.com/cheesuschrist_official/" target="_blank">
+          <img src="imagenes/insta.png" width="22" style="margin-left: 100px; margin-top: 2px;"></a>
+        <br>
+        <a href="https://twitter.com/Cheesus95962796" target="_blank">
+          <img src="imagenes/twitter.png" width="22" style="margin-left: 100px; margin-top: 2px;"></a>
+        <br>
+        <p class="lo" style="margin-top: -88px; letter-spacing: 1px; font-size: 14px; margin-left: 140px;">@cheesuschristrd</p>
+        <br>
+        <p class="lo" style="margin-top: -17px; letter-spacing: 1px; font-size: 14px; margin-left: 140px;">@cheesuschrist_official</p>
+        <br>
+        <p class="lo" style="margin-top: -15px; letter-spacing: 1px; font-size: 14px; margin-left: 140px;">@cheesuschrist</p>
+      </td>
+    
+    </tr>
+    </table>
+    </section>
+
+</body>
+</html>
+

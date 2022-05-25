@@ -1,0 +1,588 @@
+
+  h2{
+      font-family: letra3;
+      font-size: 40px;
+      margin-bottom: -10px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  p{
+      font-family: letrica5;
+      font-weight: bold;
+  }
+
+  body{
+      background-color: #e0d0c4;
+  }
+  
+  /* Style inputs */
+        /*BOX FOR HEADER*/
+        ul {
+          list-style-type: none;
+          width: 1420px;
+          height: 70px;
+          margin-left: 60px;
+          margin-top: -10px;
+          padding-left: 40px;
+          overflow:visible;
+          background-color: #ab4903;
+          z-index: 60;
+          position: fixed;
+          transition: top 0.3s; 
+          display: block;}
+              ul.hide {
+          top: -53px;}
+          
+          /* WORDS FOR HEADER*/
+              li {
+      float: left;
+      position:relative;
+      z-index: 8;} 
+              li a {
+      display: block;
+      font-family: letrica;
+      font-size: 20px;
+      color: white;
+      text-align:left;
+      position: relative;
+      padding: 25px 90px;
+      text-decoration: none;
+      z-index: 8;}
+              li a:hover {
+      background-color: #FF7C1D;}
+  
+          /*LOGO*/
+              .logo{ 
+                  background-image: url(imagenes/yyy.png);
+                  height: 235px;
+                  width: 235px;
+                  margin-left: -50px;
+                  margin-top: -110px;
+                  position: fixed;
+                  font-family: letrica;
+                  z-index: 70;}
+  
+          /*ICONS*/
+              .img {
+                  padding-top: 22px;
+                  padding-left: 24px;
+                  padding-right: 24px;
+                  padding-bottom: 22px;
+                  margin-top: 0px;
+                  margin-left: 30px;
+                  display: block;}               
+              .img:hover {
+                  background-color: #FF7C1D;}
+  
+          /*DROPDOWN*/
+              /*LETTERS FOR DROPDOWN*/
+                  ol a{ 
+      display: block;
+      font-family: letrica2;
+      font-size: 15px;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      margin-left: -70px;
+      margin-right: -20px;
+      padding-top: 19px; 
+      position: relative;
+      padding-bottom: 16px; 
+      padding-right: 40px;
+      padding-left: 40px;
+      overflow:hidden;
+      z-index: 30;  }
+                  ol a:hover {
+      background-color: #FF7C1D;}  
+  
+              /*DROPDOWN SETTINGS*/
+                  .dropbtn2{
+                  cursor: grabbing;
+                  margin-top: -73px;
+                  margin-left: 1200px;
+                  padding-top: -11px;
+                  padding-right: 65px;
+                  padding-bottom: 69px;
+                  position: absolute;
+                  background-repeat: no-repeat;
+                  background-size: 24px;
+                  border-style: none;
+                  background-color: #903d02;
+                  background-image: url(icons/ajustes-2.png);
+                  background-position: center;} 
+                  .dropbtn2:hover{
+                  background-color: #FF7C1D;
+                  padding-bottom: 5px;
+                  padding-top: 65px;
+                  padding-right: 65px;
+                  margin-top: -72px;}
+                  .dropdn2 {
+                      position: relative;
+                      display: block;}  
+                  .dropdn2-content {
+                    text-align: center;
+                    display: none;
+                    position: absolute;
+
+                    overflow:visible;
+                    background-color: #ab490300;
+                    width: 170px;
+                    height:122px;
+                    margin-top: 7px;
+                    margin-left: 1155px;
+                    border-radius: 15%;
+                animation-name: dropdown;
+                animation-duration: 0.15s;
+                    z-index: 1010;} 
+    
+    
+  
+  
+              /*DROPDOWN USUARIO*/
+                  /*Hover*/
+                      .dropbtn3{
+                  cursor: grabbing;
+                  margin-top: -73px;
+                  margin-left: 1130px;
+                  padding-top: -11px;
+                  padding-right: 65px;
+                  padding-bottom: 69px;
+                  position: absolute;
+                  background-repeat: no-repeat;
+                  background-size: 24px;
+                  border-style: none;
+                  background-color: #ab4903;
+                  background-image: url(icons/usuario.png);
+                  background-position: center;} 
+                      .dropbtn3:hover{
+                  background-color: #FF7C1D;
+                  padding-bottom: 5px;
+                  padding-top: 65px;
+                  padding-right: 65px;
+                  margin-top: -72px;}
+                      .dropdn3 {
+                      position: relative;
+                      display: block;}  
+                      .dropdn3-content {
+                  text-align: center;
+                  display: none;
+                  position: absolute;
+                  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.438);
+                  overflow:hidden;
+                  background-color: #ab4903d3;
+                  width: 180px;
+                  height: 116px;
+                  margin-top: 7px;
+                  margin-left: 1075px;
+              animation-name: dropdown;
+              animation-duration: 0.15s;
+                  border-radius: 15%;
+                  z-index: 1010;} 
+                      .show3{
+                      display: block;}
+                   
+  
+              /*CLICK DROPDOWN COMPRAR*/
+                  .dropbtn{
+              cursor: grabbing;
+              margin-top: 0px;
+              margin-left: 51px;
+              padding-top: 65px;
+              padding-right: 65px;
+              padding-bottom: 5px;
+              background-repeat: no-repeat;
+              background-size: 24px;
+              border-style: none;
+              background-color: #AB4903;
+              background-image: url(icons/carrito-de-compras.png);
+              background-position: center;}  
+                  .dropbtn:hover{
+              background-color: #FF7C1D;
+              padding-bottom: 5px;
+              padding-top: 65px;
+              padding-right: 65px;
+              margin-bottom: 1px;}
+                  .dropdn {
+              position: relative;
+              display: block;}     
+                  .dropdn-content {
+              text-align: center;
+              display: none;
+              position: absolute;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.438);
+              overflow:hidden;
+              z-index: -20;
+              background-color: #ab4903d3;
+              width: 180px;
+              height:137px;
+              margin-top: 8px;
+              margin-left: 1000px;
+              border-radius: 15%;
+              z-index: 1010;
+              overflow:hidden;
+              animation-name: dropdown;
+              animation-duration: 0.15s;} 
+                  .show {
+                      display: block;}
+  
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(148, 16, 16);
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+
+    margin-left: 40px;
+    resize: vertical;
+  }
+  
+
+  label{
+    margin-left: 40px;
+    font-family: letrica;
+  }
+  input[class=w3-input], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(148, 16, 16);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+font-size: 15px;
+    font-family: letrica;
+    cursor: pointer;
+  }
+  
+  textarea[type=subject]:hover {
+    border: 3px solid#45a049;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #ab490386;
+    padding: 20px;
+    margin: 0px 50px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 600px;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /*FONTS */
+  @font-face {
+      font-family: letrica;
+      src: url(Fonts/font/Simply\ Olive\ DEMO.ttf);
+      color: ivory;}
+  @font-face {
+      font-family: letrica2;
+      src: url(Fonts/font/FullyAutomaticDEMO-Regular.otf);
+      color: ivory;}
+  @font-face {
+      font-family: letrica;
+      src: url(Fonts/font/Mcbungus-Regular.ttf);
+      color: ivory;}
+  @font-face {
+      font-family: letrica3;
+      src: url(Fonts/font/MintConditionDEMO-Regular.otf);
+      color: ivory;}
+  @font-face {
+      font-family: letra;
+      src: url(Fonts/font/Popular.ttf);
+      color: #f1f1f1;
+      size: 40px;}
+  @font-face {
+      font-family: letrica4;
+      src: url(Fonts/font/Simply\ Olive\ DEMO.ttf);
+      color: ivory;}
+  @font-face {
+      font-family: letra2;
+      src: url(Fonts/font/Tadia.ttf);
+      color: ivory;}
+  @font-face {
+      font-family: letra3;
+      src: url(Fonts/font2/Brown\ Holmes\ DEMO.otf);
+      color: ivory;
+      outline: thick ridge pink;}
+  @font-face {
+      font-family: letra4;
+      src: url(Fonts/font2/HaveFun.ttf);
+      color: ivory;}
+  @font-face {
+      font-family: letra5;
+      src: url(Fonts/font2/Rainshow\ Condensed.otf);
+      color: ivory;}
+  @font-face {
+          font-family: letrica5;
+          src: url(Fonts/font3/MachinDEMO-Regular.otf);
+          color: ivory;}
+  @font-face {
+              font-family: letrica6;
+              src: url(Fonts/font3/Princesset.ttf);
+              color: ivory;}
+  
+              
+
+/*Footer*/    
+    /*BOX FOR FOOTER*/
+    .banner33{
+        background-color: #ab4903d3;
+        height: 200px;
+        width: 1442px;
+        margin-bottom: -170px;
+        margin-left: -10px;
+        z-index: -20;
+        position: relative;
+        clear: both;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.438);
+        margin-top: 190px;
+        
+        
+    
+    }
+    
+    .la {
+      color:rgb(15, 15, 15);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      margin-left: 210px;
+      padding-top: 50px;
+    }
+    .lo {
+      color: #050301e7;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      font-size: 50px;
+      margin-left: 200px;
+      margin-top: -20px;
+      letter-spacing: -2px;
+    }
+    .le {
+      color: #050301e7;
+      font-family:sans-serif;
+    
+      font-weight: bold;
+      font-size: 12px;
+      padding-bottom: 40px;
+      max-width: 500px;
+      margin:auto;
+      letter-spacing: 3px;
+    align-content: center;}
+    
+    .lu {
+        color: #050301e7;
+        font-family:sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        padding-bottom: -10px;
+        max-width: 500px;
+        margin-bottom: -140px;
+    margin-left: 550px;
+    
+        letter-spacing: 3px;
+      align-content: center;}
+
+      
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+
+
+  .dropbtn4 {
+    background-color: #ab4903d3;;
+    color: white;
+    padding: 16px;
+    padding-top: 20px;
+    transition: 0.2s;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    padding-bottom: 23px;
+    padding-left: 43.5px;
+    padding-right: 42.8px;
+    margin-left: 0.2px;
+
+font-family: letrica2;
+    margin-top: -5px;
+    font-size: 16px;
+    z-index: 200;
+    position: relative;
+    border: none;
+  }
+  
+  .dropbtn5 {
+    background-color: #ab4903d3;
+    color: white;
+    transition: 0.2s;
+    padding: 16px;
+    padding-top: 22px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    padding-bottom: 23px;
+    padding-left: 4.5px;
+    width: 170px;
+    padding-right: 5.2px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+font-family: letrica2;
+    font-size: 16px;
+    z-index: 200;
+    position: relative;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    margin-left: -130px;
+    margin-top: -65px;
+    min-width: 120px;
+    height: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+transition: 0.6s;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+transition: 0.6s;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn4 {background-color: #FF7C1D;}
+
+.dropbtn5:hover {background-color: #FF7C1D;}
+
+
+
+
+
+
+.english{
+    background-color: #FF7C1D; /* Green */
+    border: none;
+    color: white;
+    width: 140px;
+    font-family: letrica2;
+    padding:  15px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -3px;
+    margin-bottom: -2px;
+    font-size: 16px;
+
+    transition: 0.3s;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    cursor: pointer;
+}
+
+.spanish{
+    background-color: #ab4903; /* Green */
+    border: none;
+    color: white;
+    width: 140px;
+    padding: 15px 0px;
+    font-family: letrica2;
+    text-align: center;
+    text-decoration: none;
+
+    transition: 0.3s;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+.english:hover{background-color: #FF7C1D;}
+.spanish:hover{background-color: #FF7C1D;}
